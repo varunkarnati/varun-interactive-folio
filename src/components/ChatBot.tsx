@@ -36,18 +36,31 @@ const ChatBot = () => {
 
     const userMessage = input.trim();
     setInput("");
-    setMessages(prev => [...prev, { role: "user", content: userMessage }]);
+    const newMessages = [...messages, { role: "user" as const, content: userMessage }];
+    setMessages(newMessages);
     setIsLoading(true);
 
     try {
-      // TODO: Replace with actual Groq API call once API key is added
-      // This is a placeholder response
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // Simulated response - will be replaced with Groq API
-      const response = "I'm currently a placeholder. Once you add your Groq API key, I'll be able to answer questions about Varun's experience, projects, and skills in real-time!";
-      
-      setMessages(prev => [...prev, { role: "assistant", content: response }]);
+      const response = await fetch(
+        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/chat-assistant`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
+          },
+          body: JSON.stringify({
+            messages: newMessages
+          }),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error('Failed to get response');
+      }
+
+      const data = await response.json();
+      setMessages(prev => [...prev, { role: "assistant", content: data.reply }]);
     } catch (error) {
       console.error("Chat error:", error);
       toast({
