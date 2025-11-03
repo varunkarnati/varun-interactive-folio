@@ -3,21 +3,17 @@ import { Code, Brain, Mic, Wrench, Cloud, Database as DatabaseIcon } from "lucid
 
 const skillCategories = [
   {
-    title: "Languages",
-    icon: Code,
-    skills: ["Python", "JavaScript", "TypeScript", "SQL"]
-  },
-  {
-    title: "AI & ML",
+    title: "AI & LLMs",
     icon: Brain,
     skills: [
       "LangChain",
       "GPT-4 & LLMs",
       "RAG Systems",
+      "Multi-Agent AI",
+      "Prompt Engineering",
+      "Fine-tuning",
       "Vector Databases",
       "Transformers",
-      "TensorFlow",
-      "PyTorch",
       "Pinecone",
       "FAISS",
       "Chroma"
@@ -37,14 +33,26 @@ const skillCategories = [
     ]
   },
   {
-    title: "Frameworks",
-    icon: Wrench,
+    title: "Dev Stack",
+    icon: Code,
     skills: [
+      "Python",
+      "TypeScript",
       "FastAPI",
       "React",
-      "Next.js",
       "LangGraph",
-      "Node.js"
+      "WebSockets"
+    ]
+  },
+  {
+    title: "Backend & APIs",
+    icon: Wrench,
+    skills: [
+      "REST APIs",
+      "GraphQL",
+      "WebRTC",
+      "Async Processing",
+      "Message Queues"
     ]
   },
   {

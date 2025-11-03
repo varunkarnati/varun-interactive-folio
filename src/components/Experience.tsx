@@ -4,7 +4,7 @@ import { Calendar, MapPin, Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    role: "Founding Team Member, Generative AI Engineer",
+    role: "Founding AI Engineer",
     company: "VOIS AI",
     period: "Apr 2025 – Present",
     location: "Remote",
@@ -19,7 +19,7 @@ const experiences = [
     ]
   },
   {
-    role: "Generative AI Engineer",
+    role: "AI Engineer",
     company: "AGIE AI",
     period: "Oct 2024 – Apr 2025",
     location: "Remote",
@@ -33,7 +33,7 @@ const experiences = [
     ]
   },
   {
-    role: "Generative AI Engineer Intern",
+    role: "AI Engineer Intern",
     company: "AGIE AI",
     period: "Aug 2024 – Oct 2024",
     location: "Remote",
@@ -45,7 +45,7 @@ const experiences = [
     ]
   },
   {
-    role: "Freelance Generative AI Engineer",
+    role: "Freelance AI Engineer",
     company: "Upwork",
     period: "Jan 2024 – May 2024",
     location: "Remote",

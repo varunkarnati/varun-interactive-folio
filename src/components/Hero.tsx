@@ -17,13 +17,24 @@ const Hero = () => {
               Varun Kumar Karnati
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Generative AI Engineer & Voice AI Specialist
+              AI Engineer | Building Intelligence at Scale
             </p>
+            <div className="flex items-center gap-2 justify-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              <span className="px-4 py-1 bg-primary/10 border border-primary/30 rounded-full text-sm text-primary">
+                LLMs & Voice AI
+              </span>
+              <span className="px-4 py-1 bg-primary/10 border border-primary/30 rounded-full text-sm text-primary">
+                Real-time Systems
+              </span>
+              <span className="px-4 py-1 bg-primary/10 border border-primary/30 rounded-full text-sm text-primary">
+                Multi-Agent AI
+              </span>
+            </div>
           </div>
 
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            Building scalable AI solutions with expertise in LLMs, Voice AI, and Real-time Conversational Systems.
-            Currently pioneering voice agent platforms at VOIS AI, serving 10K+ daily users.
+          <p className="text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.5s' }}>
+            Architecting intelligent systems that understand, reason, and respond in real-time.
+            From LLM orchestration to voice AI platforms — building the future of human-AI interaction.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
